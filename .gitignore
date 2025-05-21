@@ -1,0 +1,73 @@
+# -----------------------------------------------------------
+# Archivos de Sistema Operativo y Editores/IDE
+# -----------------------------------------------------------
+.DS_Store             # Archivos de macOS
+Thumbs.db             # Archivos de miniaturas de Windows
+desktop.ini           # Archivos de configuración de Windows
+*.log                 # Archivos de log
+*.swp                 # Archivos de swap de Vim
+.vscode/              # Directorio de configuración de VS Code
+.idea/                # Directorio de configuración de IntelliJ/WebStorm/PhpStorm
+*.sublime-project     # Archivos de proyecto de Sublime Text
+*.sublime-workspace   # Archivos de workspace de Sublime Text
+.env                  # Archivos de variables de entorno (¡muy importante no subir credenciales!)
+.env.*.local          # Variantes de archivos .env locales
+
+# -----------------------------------------------------------
+# Dependencias de Paquetes
+# -----------------------------------------------------------
+node_modules/         # Dependencias de Node.js (JavaScript)
+vendor/               # Dependencias de PHP (Composer)
+build/                # Directorios de build/compilación
+dist/                 # Directorios de distribución
+*.gem                 # Gemas de Ruby
+*.pyc                 # Archivos compilados de Python
+__pycache__/          # Directorio de caché de Python
+.gradle/              # Directorio de Gradle (Java/Android)
+target/               # Directorio de compilación Maven (Java)
+
+# -----------------------------------------------------------
+# Archivos de Compilación / Binarios / Generados
+# -----------------------------------------------------------
+*.o                   # Archivos objeto
+*.so                  # Archivos de objeto compartido
+*.dll                 # Bibliotecas de enlace dinámico (Windows)
+*.exe                 # Ejecutables de Windows
+*.out                 # Salidas de compilación generales
+.sass-cache/          # Caché de SASS
+npm-debug.log         # Logs de depuración de NPM
+yarn-error.log        # Logs de error de Yarn
+
+# -----------------------------------------------------------
+# Archivos de Configuración Personal o Sensibles
+# -----------------------------------------------------------
+config.local.php      # Archivos de configuración locales que pueden contener credenciales
+credentials.json      # Credenciales de API o servicios
+*.pem                 # Archivos de clave privada
+*.key                 # Archivos de clave
+*.p12                 # Archivos de certificado
+*.sqlite3             # Bases de datos SQLite (si son temporales o de desarrollo local)
+
+# -----------------------------------------------------------
+# Archivos de Testing y Cobertura
+# -----------------------------------------------------------
+/coverage/            # Directorios de reportes de cobertura de tests
+.nyc_output/          # Salidas de NYC (herramienta de cobertura JS)
+
+# -----------------------------------------------------------
+# Directorios o Archivos Temporales
+# -----------------------------------------------------------
+tmp/                  # Directorios temporales
+temp/                 # Directorios temporales
+*~                    # Archivos de respaldo creados por algunos editores
+*.bak                 # Archivos de respaldo
+*.swp                 # Archivos de swap de Vim
+.DS_Store             # Archivos de macOS (repetido por si acaso, aunque ya estaba arriba)
+
+# -----------------------------------------------------------
+# Reglas Específicas del Proyecto (Ejemplo para un proyecto web)
+# -----------------------------------------------------------
+/uploads/             # Archivos subidos por usuarios (nunca deben estar en el control de versiones)
+/media/               # Archivos multimedia generados o subidos
+/node_modules/        # (Repetido, ya que es muy común y crítico)
+/storage/*.log        # Logs específicos de un framework (ej. Laravel)
